@@ -1,0 +1,30 @@
+### List all messages
+GET http://localhost:3000/messages/student
+
+
+### Create New message
+POST http://localhost:3000/messages
+content-type: application/json
+
+{
+    "content" : "56"
+}
+
+### Get a particular message
+GET http://localhost:3000/messages/:id
+
+
+##################################################################
+
+### Get all students
+GET http://localhost:3000/students/get
+
+### Post new student
+POST http://localhost:3000/students/new
+content-type: application/json
+
+{
+    "content" : 98,
+    "school" : "Boss"
+
+}
