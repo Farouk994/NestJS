@@ -11,11 +11,11 @@ import { MessagesService } from './messages.service';
 
 @Controller('messages')
 export class MessagesController {
-  messagesService: MessagesService;
-  constructor() {
+  // messagesService: MessagesService;
+  constructor(public messagesService: MessagesService) {
     // Dont do this on Real App
     // Use Dependency Injection
-    this.messagesService = new MessagesService();
+    // this.messagesService = messagesService;
   }
   @Get('/students')
   listMessages() {
