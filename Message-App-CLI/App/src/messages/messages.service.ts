@@ -6,7 +6,6 @@ export class MessagesService {
   // messagesRepo: MessagesRepository;
   constructor(public messagesRepo: MessagesRepository) {
     // Service is creating its own dependency
-    // Dont do this on a real app
     // this.messagesRepo = messagesRepo;
   }
 
